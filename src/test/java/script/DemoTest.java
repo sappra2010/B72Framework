@@ -15,8 +15,8 @@ public class DemoTest extends BaseTest
 			Reporter.log("test data:"+data,true);
 			Reporter.log(driver.getTitle(),true);	
 			
-			GooglePage g=new GooglePage(driver);
-			g.setSearch(data);
+		//	GooglePage g=new GooglePage(driver);
+			//g.setSearch(data);
 			Thread.sleep(3000);
 
 	}
