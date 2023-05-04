@@ -16,7 +16,7 @@ public class ValidLogin extends BaseTest
 //		1. enter valid un
 		loginPage.setUserName("admin");
 //		2. enter valid pw
-		loginPage.setPassword("manager1");
+		loginPage.setPassword("manager");
 //		3. click login button
 		loginPage.clickLoginButton();
 //		4. home page should be displayed
