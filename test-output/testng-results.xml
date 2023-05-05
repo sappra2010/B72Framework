@@ -8,15 +8,18 @@
       <![CDATA[Browser is: chrome]]>
     </line>
     <line>
-      <![CDATA[HomePage is Displayed]]>
+      <![CDATA[Err Msg is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Err Msg is Displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-04T12:54:15 IST" name="Default suite" finished-at="2023-05-04T12:54:39 IST" duration-ms="24453">
+  <suite started-at="2023-05-05T11:37:29 IST" name="Default suite" finished-at="2023-05-05T11:37:51 IST" duration-ms="22490">
     <groups>
     </groups>
-    <test started-at="2023-05-04T12:54:15 IST" name="Default test" finished-at="2023-05-04T12:54:39 IST" duration-ms="24453">
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.ValidLogin@10e31a9a]" started-at="2023-05-04T12:54:15 IST" name="preCondition" finished-at="2023-05-04T12:54:31 IST" duration-ms="16035" status="PASS">
+    <test started-at="2023-05-05T11:37:29 IST" name="Default test" finished-at="2023-05-05T11:37:51 IST" duration-ms="22490">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.InvalidLogin@10e31a9a]" started-at="2023-05-05T11:37:29 IST" name="preCondition" finished-at="2023-05-05T11:37:47 IST" duration-ms="17598" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,18 +46,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@10e31a9a]" started-at="2023-05-04T12:54:31 IST" name="testValidLogin" finished-at="2023-05-04T12:54:39 IST" duration-ms="8027" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@10e31a9a]" started-at="2023-05-05T11:37:47 IST" name="testInvalidLogin" finished-at="2023-05-05T11:37:51 IST" duration-ms="4285" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[HomePage is Displayed]]>
+              <![CDATA[Err Msg is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Err Msg is Displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.ValidLogin@10e31a9a]" started-at="2023-05-04T12:54:39 IST" name="postCondition" finished-at="2023-05-04T12:54:39 IST" duration-ms="315" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.InvalidLogin@10e31a9a]" started-at="2023-05-05T11:37:51 IST" name="postCondition" finished-at="2023-05-05T11:37:51 IST" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
