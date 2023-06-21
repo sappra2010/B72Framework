@@ -10,10 +10,16 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
+<systemPropertyVariables>
+<htmlpath>report/Spark.html</htmlpath>
+<appurl>https://demo.actitime.com/login.do</appurl>
+<grid>no</grid>
+<pptfile>prod.properties</pptfile>
+</systemPropertyVariables>
+<suiteXmlFiles>
+<suiteXmlFile>testng.xml</suiteXmlFile>
+</suiteXmlFiles>
+</configuration>
       </plugin>
   </plugins>
   </build>
@@ -38,6 +44,16 @@
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>5.2.3</version>
+</dependency>
+<dependency>
+    <groupId>ru.yandex.qatools.ashot</groupId>
+    <artifactId>ashot</artifactId>
+    <version>1.5.4</version>
+</dependency>
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>LATEST</version>
 </dependency>
   </dependencies>
   

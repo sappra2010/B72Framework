@@ -3,16 +3,18 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="grid" value="no"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="appurl" value="http://www.fb.com"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="appurl" value="https://demo.actitime.com/login.do"/>
     <classes>
-      <class name="script.DemoTest">
+      <class name="script.ValidLogin">
         <methods>
           <include name="postCondition"/>
-          <include name="demoTest1"/>
+          <include name="generateReport"/>
+          <include name="intReport"/>
           <include name="preCondition"/>
+          <include name="testValidLogin"/>
         </methods>
-      </class> <!-- script.DemoTest -->
+      </class> <!-- script.ValidLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
